@@ -14,7 +14,14 @@
 </head>
 <body>
     <h1>Welcome to gitPub</h1>
-  
+    <ul>
+        <% drinks.forEach(v => { %> 
+          <li>
+             <%=v.name.charAt(0).toUpperCase()+ v.name.slice(1) %> 
+         </li>
+      <% }) %>
+
+    </ul>
 
 </body>
 </html>
