@@ -15,12 +15,11 @@
 <body>
     <h1>Welcome to gitPub</h1>
     <ul>
-        <% drinks.forEach(v => { %> 
-          <li>
-             <%=v.name.charAt(0).toUpperCase()+ v.name.slice(1) %> 
-         </li>
-      <% }) %>
-
+        <% for(let i = 0; i < allDrinks.length; i++) { %>
+            <li>
+                <a href="/drinks/<%=i%>"><%=allDrinks[i].name.charAt(0).toUpperCase()+ allDrinks[i].name.slice(1)%></a>
+            </li>
+        <% } %>
     </ul>
 
 </body>
